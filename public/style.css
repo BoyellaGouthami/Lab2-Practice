@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+  background-color: lightyellow;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+
+p {
+  color: red;
+}
+
+form {
+  margin: 20px;
+}
+
+#cityInput {
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#weatherInfo {
+  margin: 20px;
+  font-size: 18px;
+}
