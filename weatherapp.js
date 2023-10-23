@@ -8,6 +8,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files (HTML and CSS)
 app.use(express.static(__dirname + '/public'));
 
+app.get('/weatherapp.js', function (req, res) {
+    res.setHeader('Content-Type', 'text/javascript');
+    res.sendFile(__dirname + '/weatherapp.js');
+});
+
 // Main page
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/index.html');
